@@ -30,18 +30,23 @@
             <div class="container">
                 <form>
                     <div class="filter">
-                        <span>Сортировка:</span>
-                        <ul>
+                        <p>Сортировка:</p>
+                        <ul class="filter-select">
                             <li>по популярности</li>
                         </ul>
                     </div>
                     <div class="filter">
-                        <span>Цена: 100 руб. - 500 руб.</span>
+                        <p>Цена: 100 руб. - 500 руб.</p>
+                        <div class="filter-select">
+                            <div class="filter-line"></div>
+                            <div class="round min"></div>
+                            <div class="round max"></div>
+                        </div>
                         
                     </div>
                     <div class="filter">
-                        <span>Жирность:</span>
-                        <div>
+                        <p>Жирность:</p>
+                        <div class="filter-select">
                             <label><input type="radio">0%</label>
                             <label><input type="radio" checked>до 10%</label>
                             <label><input type="radio">до 30%</label>
@@ -49,8 +54,8 @@
                         </div>
                     </div>
                     <div class="filter">
-                        <span>Наполнители:</span>
-                        <div>
+                        <p>Наполнители:</p>
+                        <div class="filter-select">
                             <label><input type="checkbox" checked>шоколадные</label>
                             <label><input type="checkbox" checked>сахарные присыпки</label>
                             <label><input type="checkbox">фрукты</label>
@@ -66,48 +71,54 @@
                     <span>Сливочное</span>
                 </ul>
                 <h2>Сливочное мороженое</h2>
-                <div class="content">
+                <div class="products">
                     <article class="product-item">
                         <div>
-                            <img src="img/img3.jpg" width="267" height="267">
+                            <img src="img/img3.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом">
                             <b>310 р/кг</b>
                         </div>
                         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                        <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="product-item">
                         <div>
-                            <img src="img/img4.jpg" width="267" height="267">
+                            <img src="img/img4.jpg" width="267" height="267" alt="Сливочно-кофейное">
                             <b>380 р/кг</b>
                         </div>
                         <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+                        <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="product-item">
                         <div>
-                            <img src="img/img5.jpg" width="267" height="267">
+                            <img src="img/img5.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой">
                             <b>355 р/кг</b>
                         </div>
                         <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                        <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="product-item">
                         <div>
-                            <img src="img/img6.jpg" width="267" height="267">
+                            <img src="img/img6.jpg" width="267" height="267" alt="Сливочное крем-брюле">
                             <b>415 р/кг</b>
                         </div>
                         <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+                        <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="product-item">
                         <div>
-                            <img src="img/img7.jpg" width="267" height="267">
+                            <img src="img/img7.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
                             <b>325 р/кг</b>
                         </div>
                         <a href="#">Сливочное с брусничным джемом</a>
+                        <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="product-item">
                         <div>
-                            <img src="img/img8.jpg" width="267" height="267">
+                            <img src="img/img8.jpg" width="267" height="267" alt="Сливочно-черничное с ягодами черники">
                             <b>410 р/кг</b>
                         </div>
                         <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+                        <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="product-item">
                         <div>
@@ -115,6 +126,7 @@
                             <b>375 р/кг</b>
                         </div>
                         <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+                        <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="product-item">
                         <div>
@@ -122,34 +134,39 @@
                             <b>320 р/кг</b>
                         </div>
                         <a href="#">Сливочное с шоколадной стружкой</a>
+                        <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="product-item">
                         <div>
-                            <img src="img/img11.jpg" width="267" height="267">
+                            <img src="img/img11.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
                             <b>440 р/кг</b>
                         </div>
                         <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+                        <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="product-item">
                         <div>
-                            <img src="img/img12.jpg" width="267" height="267">
+                            <img src="img/img12.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
                             <b>435 р/кг</b>
                         </div>
                         <a href="#">Сливочное с ментоловым сиропом</a>
+                        <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="product-item">
                         <div>
-                            <img src="img/img13.jpg" width="267" height="267">
+                            <img src="img/img13.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
                             <b>355 р/кг</b>
                         </div>
                         <a href="#">Сливочное с кусочками черного шоколада</a>
+                        <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="product-item">
                         <div>
-                            <img src="img/img14.jpg" width="267" height="267">
+                            <img src="img/img14.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
                             <b>420 р/кг</b>
                         </div>
                         <a href="#">Сливочное с мятным сиропом</a>
+                        <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                 </div>
             </div>

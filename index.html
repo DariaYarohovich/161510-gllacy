@@ -6,24 +6,28 @@
   </head>
   <body>
       <header class="main-header">
-          <div class="logo">
-              <a href="#"><img src="img/logo.img" alt="Глейси" title="Глейси" width="111" height="24"></a>
-          </div>
-          <nav class="navigation">
-              <ul>
-                  <li><a href="#">Каталог</a></li>
-                  <li><a href="#">Доставка и оплата</a></li>
-                  <li><a href="#">О Компании</a></li>
-              </ul>
-          </nav>
-          <div class="user-block">
-             <button><img>Поиск</button><!-- img или background-image?--> 
-             <button>Вход</button>
-             <button>Корзина</button>
-          </div>
-          <div class="header contacts">
-             <p>С 10 до 20, ежедневно</p>
-             <b>8 812 450-25-25</b>
+          <div class="container">
+              <div class="header-menu">
+                  <div class="logo">
+                      <a href="#"><img src="img/logo.img" alt="Глейси" title="Глейси" width="111" height="24"></a>
+                  </div>
+                  <nav class="navigation">
+                      <ul>
+                          <li><a href="#">Каталог</a></li>
+                          <li><a href="#">Доставка и оплата</a></li>
+                          <li><a href="#">О Компании</a></li>
+                      </ul>
+                  </nav>
+                  <div class="user-block">
+                     <a href="#"><img>Поиск</a>
+                     <a href="#">Вход</a>
+                     <a href="#">Корзина</a>
+                  </div>
+              </div>
+              <div class="header-contacts">
+                 <p>С 10 до 20, ежедневно</p>
+                 <b>8 812 450-25-25</b>
+              </div>
           </div>
       </header>
       <main class="main-content">
@@ -33,7 +37,7 @@
                     <img src="img/img2.jpg">
                     <h1>Крем-брюле и пломбир с малиновым джемом</h1>
                     <div>
-                        <div class="???">
+                        <div class="slider-switch">
                             <a class="active" href="#"></a>
                             <a href="#"></a>
                             <a href="#"></a>
@@ -42,18 +46,18 @@
                     </div>
                 </div>
                 <div class="sp-offer">
-                    <div class="content sp-offer-left">
+                    <div class="content special-offer-left">
                         <h3>Малинка даром</h3>
                         <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
                         <a class="btn">Хочу варенье!</a>
                     </div>
-                    <div class="content sp-offer-right">
+                    <div class="content special-offer-right">
                         <h3>Шоколадки даром</h3>
                         <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
                         <a class="btn">Хочу шоколадки!</a>
                     </div>
                 </div>
-                <div class="bestseller">
+                <div class="hit">
                     <article class="product-item">
                         <div>
                             <img src="img/img3.jpg" width="267" height="267">
@@ -61,6 +65,7 @@
                             <div class="item-hit">Хит</div>
                         </div>
                         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                        <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="product-item">
                         <div>
@@ -69,6 +74,7 @@
                             <div class="item-hit">Хит</div>
                         </div>
                         <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+                        <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="product-item">
                         <div>
@@ -77,6 +83,7 @@
                             <div class="item-hit">Хит</div>
                         </div>
                         <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                        <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="product-item">
                         <div>
@@ -85,23 +92,51 @@
                             <div class="item-hit">Хит</div>
                         </div>
                         <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+                        <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                 </div>
                 <div class="content description">
-                    <h4></h4>
+                    <h4>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h4>
+                    <div class="feature-description">
+                        <img src="img/img15.jpg" width="49" height="49" alt="иконка-мороженое">
+                        <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                    </div>
+                     <div class="feature-description">
+                        <img src="img/img16.jpg" width="49" height="49" alt="иконка-листик">
+                        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+                    </div>
+                     <div class="feature-description">
+                        <img src="img/img17.jpg" width="49" height="49" alt="иконка-корова">
+                        <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                    </div>
+                     <div class="feature-description">
+                        <img src="img/img18.jpg" width="49" height="49" alt="иконка-градусник">
+                        <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+                    </div>
                 </div>
-                <div class="news">
+                <div class="promotion">
+                    <div class="content news">
+                        <p><b>Новое в нашем блоге</b></p>
+                        <a class="news-title" href="#">10  способов сервировки фруктовых щербетов к столу</a>
+                    </div>
+                    <div class="content mail">
+                        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+                        <form class="mail-form">
+                            <input type="text" placeholder="Электронная почта">
+                            <button class="btn" type="submit">Отправить</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="contact-info">
-                <img src="#" title="Указатель на карте">
-                <div class="contacts">
+                <img src="img/img19.jpg" title="Указатель на карте">
+                <div class="content contacts">
                     <p>Адрес главного офиса и<br>
                        офлайн магазина:<br>
                        <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
                     </p>
                     <p>Для заказов по телефону:<br>
-                       <b>8 812 450-25-25</b><br>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого
+                       <b>8 812 450-25-25</b><br>
                        (с 10 до 20 ежедневно)
                     </p>
                     <a class="bth" href="#">Форма обратной связи</a>
