@@ -3,44 +3,50 @@
     <head>
         <meta charset="utf-8">
         <title>Глейси, каталог</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style_adapt.css">
     </head>
     <body>
         <header class="main-header">
-            <div class="container">
-                <div class="logo">
-                    <a href="#"><img src="img/logo.png" width="153" height="63" alt="Глейси"></a>
+            <div class="container clearfix">
+                <div class="header-menu">
+                    <nav class="navigation">
+                      <ul>
+                          <li><img src="img/logo.png" alt="Глейси" title="Глейси" width="153" height="63"></li>
+                          <li><a href="#">Каталог</a></li>
+                          <li><a href="#">Доставка и оплата</a></li>
+                          <li><a href="#">О Компании</a></li>
+                      </ul>
+                  </nav>
                 </div>
-                <ul class="menu">
-                    <li class="active"><a href="#">Каталог</a></li>
-                    <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">О Компании</a></li>
-                </ul>
                 <div class="user-block">
-                    <button><img>Поиск</button><!-- img или background-image?--> 
-                    <button>Вход</button>
-                    <button>Корзина</button>
+                    <button type="button" class="search"></button>
+                    <button type="button" class="login">Вход</button>
+                    <button type="button" class="card">Корзина</button>
                 </div>
-                <div class="header-contacts">
-                    <p>С 10 до 20, ежедневно</p>
-                    <b>8 812 450-25-25</b>
+                <div>
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <span>Сливочное</span>
+                        </ul>
+                    </div>
+                    <div class="header-contacts">
+                        <p>С 10 до 20, ежедневно</p>
+                 <b>8 812 450-25-25</b>
+                    </div>
                 </div>
             </div>
         </header>
         <main class="main-content">
-            <div class="container">
-                  <ul class="breadcrumbs">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Каталог</a></li>
-                    <span>Сливочное</span>
-                </ul>
-                <h2>Сливочное мороженое</h2>
+            <div class="container">   
+                <div class="catalog-title"><h2>Сливочное мороженое</h2></div>
                 <form>
                     <div class="filter">
                         <p>Сортировка:</p>
-                        <ul class="filter-select">
-                            <li>по популярности</li>
-                        </ul>
+                        <select class="filter-select">
+                            <option value="popularity">по популярности</option>
+                        </select>
                     </div>
                     <div class="filter">
                         <p>Цена: 100 руб. - 500 руб.</p>
@@ -49,7 +55,6 @@
                             <div class="round min"></div>
                             <div class="round max"></div>
                         </div>
-                        
                     </div>
                     <div class="filter">
                         <p>Жирность:</p>
@@ -81,7 +86,7 @@
                         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                         <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
-                    <article class="product-item">
+                   <article class="product-item">
                         <div>
                             <img src="img/catalog_img2.jpg" width="200" height="200" alt="Сливочно-кофейное">
                             <b>380 р/кг</b>
@@ -170,20 +175,18 @@
                         <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                 </div>
-            </div>
-            <div class="paginator">
-                <!-- <img src="img/img15.jpg"> -->
-                <a class="button active" href="#">1</a>
-                <a class="button" href="#">2</a>
-                <a class="button" href="#">3</a>
-                <a class="button" href="#">4</a>
-                <a class="button" href="#">5</a>
-                <!-- <img src="img/img15.jpg"> -->
+                <div class="paginator">
+                    <a class="button active" href="#">1</a>
+                    <a class="button" href="#">2</a>
+                    <a class="button" href="#">3</a>
+                    <a class="button" href="#">4</a>
+                    <a class="button" href="#">5</a>
+                </div>
             </div>
         </main>
         <footer class="main-footer">
             <div class="container">
-                <div class="footer-social">
+               <div class="footer-social">
                     <a class="social-btn tw"href="#">Twitter</a>
                     <a class="social-btn inst"href="#">Instagram</a>
                     <a class="social-btn fb"href="#">Facebook</a>
