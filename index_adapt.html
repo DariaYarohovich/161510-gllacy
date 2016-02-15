@@ -3,26 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="css/n">
-    <link rel="stylesheet" href="css/style_adapt.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
       <header class="main-header">
           <div class="container clearfix">
-              <div class="header-menu">
-                  <nav class="navigation">
-                      <ul>
-                          <li><img src="img/logo.png" alt="Глейси" title="Глейси" width="153" height="63"></li>
-                          <li><a href="#">Каталог</a></li>
-                          <li><a href="#">Доставка и оплата</a></li>
-                          <li><a href="#">О Компании</a></li>
-                      </ul>
+             <div class="header-title clearfix">
+                  <div class="logo"><img src="img/logo.png" alt="Глейси" title="Глейси" width="153" height="63"></div>
+                  <nav class="header-menu">
+                    <ul class="navigation">
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">О Компании</a></li>
+                    </ul>
                   </nav>
-              </div>
-              <div class="user-block">
-                    <button type="button" class="search"></button>
-                    <button type="button" class="login">Вход</button>
-                    <button type="button" class="card">Корзина</button>
+                  <div class="user-block">
+                     <div class="search-form">
+                         <a class="search" type="button">
+                             <div class="form-field">
+                                  <input class="search-model" type="text" placeholder="Что ищем?">                      
+                             </div>
+                         </a>
+                      </div>
+                      <div class="login-form">
+                      <a type="button" class="login">Вход</a>
+                      </div>
+                      <div class="card-form">
+                      <a type="button" class="card">Пусто</a>
+                      </div>
+                  </div>
               </div>
               <div class="header-contacts">
                   <p>С 10 до 20, ежедневно</p>
@@ -34,7 +45,7 @@
             <div class="container">   
                 <div class="special-offer">
                     <div class="slider">
-                        <img src="img/slide1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
+                        <img src="img/index_slide1.png" width="900" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
                         <h1>Крем-брюле и пломбир с малиновым джемом</h1>
                         <div>
                             <div class="slider-switch">
@@ -42,7 +53,7 @@
                                 <a href="#"></a>
                                 <a href="#"></a>
                             </div>
-                            <a class="btn slider-button">Давайте оба!</a>
+                            <a href="#" class="btn slider-button">Давайте оба!</a>
                         </div>
                     </div>
                     <!-- <div class="slider">
@@ -72,27 +83,27 @@
                     <div class="special-offer-content special-offer-left">
                         <h3>Малинка даром</h3>
                         <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                        <a class="btn">Хочу варенье!</a>
+                        <a href="#" class="btn">Хочу варенье!</a>
                     </div>
                     <div class="special-offer-content special-offer-right">
                         <h3>Шоколадки даром</h3>
                         <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-                        <a class="btn">Хочу шоколадки!</a>
+                        <a href="#" class="btn">Хочу шоколадки!</a>
                     </div>
                 </div>
                 <div class="hit">
                     <article class="product-item">
-                        <div>
-                            <img src="img/catalog_img1.jpg" width="200" height="200" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                        <div class="item-content">
+                            <div class="item-photo"><img src="img/1.png" width="200" height="200" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
                             <div class="item-price">310 р/кг</div>
                             <img class="item-hit" src="img/index_hit.png" width="61" height="61" alt="Хит">
+                            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a><br>
                         </div>
-                        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a><br>
                         <a class="btn" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="product-item">
                         <div>
-                            <img src="img/catalog_img2.jpg" width="200" height="200" alt="Сливочно-кофейное с кусочками шоколада">
+                            <img src="img/2.png" width="200" height="200" alt="Сливочно-кофейное с кусочками шоколада">
                             <div class="item-price">380 р/кг</div>
                             <img class="item-hit" src="img/index_hit.png" width="61" height="61" alt="Хит">
                         </div>
@@ -101,7 +112,7 @@
                     </article>
                     <article class="product-item">
                         <div>
-                            <img src="img/catalog_img3.jpg" width="200" height="200" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                            <img src="img/3.png" width="200" height="200" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                             <div class="item-price">355 р/кг</div>
                             <img class="item-hit" src="img/index_hit.png" width="61" height="61" alt="Хит">
                         </div>
@@ -110,7 +121,7 @@
                     </article>
                     <article class="product-item">
                          <div>
-                            <img src="img/catalog_img4.jpg" width="200" height="200" alt="Сливочное крем-брюле с карамельной подливкой">
+                            <img src="img/4.png" width="200" height="200" alt="Сливочное крем-брюле с карамельной подливкой">
                             <div class="item-price">415 р/кг</div>
                             <img class="item-hit" src="img/index_hit.png" width="61" height="61" alt="Хит">
                         </div>
@@ -162,26 +173,30 @@
                        <b>8 812 450-25-25</b><br>
                        (с 10 до 20 ежедневно)
                     </p>
-                    <a class="bth" href="#">Форма обратной связи</a>
+                    <a class="btn" href="#">Форма обратной связи</a>
                 </div>
             </div>
       </main>
       <footer class="main-footer">
             <div class="container clearfix">
                 <div class="footer-social">
-                    <a class="social-btn tw"href="#">Twitter</a>
-                    <a class="social-btn inst"href="#">Instagram</a>
-                    <a class="social-btn fb"href="#">Facebook</a>
-                    <a class="social-btn vk"href="#">ВКонтакте</a>
+                    <a class="social-btn tw"href="#"></a>
+                    <a class="social-btn ig"href="#"></a>
+                    <a class="social-btn fb"href="#"></a>
+                    <a class="social-btn vk"href="#"></a>
                 </div>
-                <div class="footer-about-us">
-                    <a class="active" href="#">Для поставщиков</a>
-                    <a href="#">О производстве</a>
-                    <a href="#">Наши документы</a>
-                    <a href="#">Экологические стандарты</a>
+                <div class="footer-about-us clearfix">
+                    <div class="about-us-left">
+                        <a class="active" href="#">Для поставщиков</a>
+                        <a href="#">О производстве</a>
+                    </div>
+                    <div class="about-us-right">
+                        <a href="#">Наши документы</a>
+                        <a href="#">Экологические стандарты</a>
+                    </div>
                 </div>
                 <div class="footer-copyright">
-                    <img src="img/htmlacademy_logo.png">
+                    <img src="img/footer-logo.svg">
                     <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2016</p>
                 </div>
             </div>
