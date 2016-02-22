@@ -277,7 +277,7 @@ a, button, input, select, textarea, password{
 }
 .nav-catalog{
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
 }
 /*
 =====================
@@ -304,7 +304,7 @@ SEARCH
 */
 .search-form{
     position: relative;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
 }
 .search{
     display: block;
@@ -338,6 +338,16 @@ SEARCH
     border: 1px solid #d3d3d2;
     border-radius: 5px;
 }
+.search-model:hover{
+    color:#c7c6c5;
+    border: 2px solid #c7c6c5;
+    padding: 9px;
+}
+.search-model:active,
+.search-model:focus{
+    border: 2px solid #8fbdec;
+    padding: 9px;
+}
 /*
 ==========
 LOGIN
@@ -345,10 +355,10 @@ LOGIN
 */
 .login-form{
     position: relative;
-    margin-top: 8px;
-    padding-bottom: 12px;
+    padding-bottom: 4px;
 }
 .login{
+    display: block;
     padding: 7px 15px 7px 45px;
     border-radius: 20px;
     background: rgba(248, 247, 244, 0.2) url("../img/header_login.png") no-repeat 17px center;
@@ -383,6 +393,16 @@ LOGIN
     border: 1px solid #d3d3d2;
     border-radius: 5px;
 }
+.mail-model:hover{
+    color:#c7c6c5;
+    border: 2px solid #c7c6c5;
+    padding: 9px;
+}
+.mail-model:active,
+.mail-model:focus{
+    border: 2px solid #8fbdec;
+    padding: 9px;
+}
 .form-field-login .btn{
     float: left;
     border: none;
@@ -410,10 +430,10 @@ CARD
 */
 .card-form{
     position: relative;
-    margin-top: 8px;
-    padding-bottom: 12px;
+    padding-bottom: 4px;
 }
 .card{
+    display: block;
     padding: 7px 30px 7px 45px;
     border-radius: 20px;
     background: rgba(248, 247, 244, 0.2) url("../img/header_cart.png") no-repeat 17px center;
@@ -422,19 +442,16 @@ CARD
     font-weight: 500;
     text-decoration: none;
 }
-
-.card:after {
-    content:"Пусто";
-}
-
-.card:hover:after {
-    content:"2 товара";
-    
+.card-full{
+    background: rgba(248, 247, 244, 0.2) url("../img/header_cart.png") no-repeat 17px center;
+    padding-right: 10px;
 }
 .card:hover{
-    background: rgba(248, 247, 244, 1) url("../img/card-full.png") no-repeat 17px center;
+    background: rgba(248, 247, 244, 1) url("../img/card-black.svg") no-repeat 17px center;
     color: #323232;
-    padding-right: 10px;
+}
+.card-full:hover{
+    background: rgba(248, 247, 244, 1) url("../img/card-full.png") no-repeat 17px center;
 }
 .card-field{
     position: absolute;
@@ -463,9 +480,10 @@ tr span{
     vertical-align: top;
 }
 .item-delete{
+    display: block;
     width: 18px;
     height: 18px;
-    background: url("../img/item-delete.svg") no-repeat center 10px;
+    background: url("../img/item-delete.svg") no-repeat center 8px;
 }
 .item-name{
     width: 230px;
@@ -861,6 +879,9 @@ FILTER-FAT
 }
 .radio-label{
     position: relative;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
     padding-left: 30px;
     margin-right: 20px;
     cursor: pointer;
@@ -908,7 +929,8 @@ FILTER-FILLING
 .filter-filling{
     box-sizing: border-box;
     width: 675px;
-    height: 36;
+    height: 36px;
+    font-size: 0px;
 }
 .filter-filling input[type="checkbox"]{
     display: none;
@@ -918,13 +940,14 @@ FILTER-FILLING
     padding-left: 26px;
     margin-right: 20px;
     cursor: pointer;
+    font-size: 16px;
 }
 .checkbox-label:last-child{
     margin-right: 0;
 }
 .checkbox-label .checkbox-indicator{
     position: absolute;
-    top:-1px;
+    top: 1px;
     left:0;
     width: 18px;
     height: 18px;
@@ -954,11 +977,15 @@ BUTTON-APPLY
 ======
 */
 .filter-apply{
+    display: block;
     float: right;
+    height: 32px;
+    line-height: 32px;
     margin-top: 25px;
-    padding: 6px 30px;
+    padding: 0 30px;
     border: 2px solid #fff;
     cursor: pointer;
+   
 }
 .filter-apply:hover{
     background: rgba(255, 255, 255, 1);
@@ -1075,6 +1102,7 @@ PAGINATOR
 .pages li{
     display: inline-block;
     vertical-align: middle;
+    margin-right: 2px;
 }
 .pages a{
     font-size: 16px;
@@ -1083,11 +1111,11 @@ PAGINATOR
     text-decoration: none;
     padding: 6px 12px;
 }
-.pages a:hover{
+.pages .button:hover{
     background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
 }
-.pages a:active{
+.pages .button:active{
     background: rgba(255, 255, 255, 1);
     border-radius: 50%;
     color: #353535;
@@ -1126,26 +1154,21 @@ footer .container{
     float: left;
     width: 255px;
     min-height: 41px;
+    font-size: 0px;
 }
 .social-btn{
     display: inline-block;
     margin-right: 12px;
-    width: 37px;
-    height: 37px;
+    width: 29px;
+    height: 29px;
     border-radius: 50%;
-    background: #c2cec7;
-    font-size: 0;
-    line-height: 0;
-    opacity: 0.8;
+    border: 4px solid rgba(253, 253, 254, 0.6);
 }
 .social-btn:hover{
-    opacity: 1;
+    border: 4px solid rgba(253, 253, 254, 0.4);
 }
-.soc-second-bg {
-    background:#758598;
-}
-.soc-third-bg {
-    background:#92786E;
+.social-btn:active{
+    box-shadow: 0 2px 1px #888 inset;
 }
 .social-btn.tw{
     background-image: url("../img/tw.svg");
@@ -1218,12 +1241,13 @@ footer .container{
 
 .popup {
     display: none;
-    position: absolute;
-    top: 200px;
+    position: fixed;
+    top: 50%;
     left: 50%;
     z-index:12;
     width: 430px;
-    margin-left: -215px;
+    margin-left: -240px;
+    margin-top: -223px;
     padding-top:20px;
     padding-left:25px;
     padding-right: 25px;

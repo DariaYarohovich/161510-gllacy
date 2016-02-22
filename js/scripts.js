@@ -13,7 +13,6 @@
             event.preventDefault();
             popup.classList.add("popup-show");
             overlay.classList.add("overlay-show");
-            scroll(0,0);
             login.focus();
         });
         
@@ -54,63 +53,32 @@
             yourEmailTip.classList.remove("form-tip-email-show");
         });
 
-        //social buttons dinamic background
-        var sliderControl1 = document.querySelector("[for=btn-1]");
-        var sliderControl2 = document.querySelector("[for=btn-2]");
-        var sliderControl3 = document.querySelector("[for=btn-3]");
-        var socialBtnTw = document.querySelector("a.tw");
-        var socialBtnIg = document.querySelector("a.ig");
-        var socialBtnFb = document.querySelector("a.fb");
-        var socialBtnVk = document.querySelector("a.vk");
         
-        sliderControl2.addEventListener("click", function(){
-            socialBtnTw.classList.add("soc-second-bg");
-            socialBtnTw.classList.remove("soc-third-bg");
-        });
-        sliderControl2.addEventListener("click", function(){
-            socialBtnIg.classList.add("soc-second-bg");
-            socialBtnIg.classList.remove("soc-third-bg");
-        });
-        sliderControl2.addEventListener("click", function(){
-            socialBtnFb.classList.add("soc-second-bg");
-            socialBtnFb.classList.remove("soc-third-bg");
-        });
-        sliderControl2.addEventListener("click", function(){
-            socialBtnVk.classList.add("soc-second-bg");
-            socialBtnVk.classList.remove("soc-third-bg");
-        });
-        
-        //
-         sliderControl3.addEventListener("click", function(){
-            socialBtnTw.classList.remove("soc-second-bg");
-            socialBtnTw.classList.add("soc-third-bg");
-        });
-        sliderControl3.addEventListener("click", function(){
-            socialBtnIg.classList.remove("soc-second-bg");
-            socialBtnIg.classList.add("soc-third-bg");
-        });
-        sliderControl3.addEventListener("click", function(){
-            socialBtnFb.classList.remove("soc-second-bg");
-            socialBtnFb.classList.add("soc-third-bg");
-        });
-        sliderControl3.addEventListener("click", function(){
-            socialBtnVk.classList.remove("soc-second-bg");
-            socialBtnVk.classList.add("soc-third-bg");
-        });
-        //
-         sliderControl1.addEventListener("click", function(){
-            socialBtnTw.classList.remove("soc-second-bg");
-            socialBtnTw.classList.remove("soc-third-bg");
-        });
-        sliderControl1.addEventListener("click", function(){
-            socialBtnIg.classList.remove("soc-second-bg");
-            socialBtnIg.classList.remove("soc-third-bg");
-        });
-        sliderControl1.addEventListener("click", function(){
-            socialBtnFb.classList.remove("soc-second-bg");
-            socialBtnFb.classList.remove("soc-third-bg");
-        });
-        sliderControl1.addEventListener("click", function(){
-            socialBtnVk.classList.remove("soc-second-bg");
-            socialBtnVk.classList.remove("soc-third-bg");
-        });
+/*============MAP==========*/
+          ymaps.ready(function () {
+          var myMap = new ymaps.Map('map', {
+                  center: [59.939167,30.327075],
+                  zoom: 16,
+                  controls: ['zoomControl']
+              }, {
+                  searchControlProvider: 'yandex#search'
+              }),
+              myPlacemark = new ymaps.Placemark([59.9386667,30.3230725], {
+                  hintContent: 'Глейси',
+                  balloonContentHeader: 'Глейси',
+                  balloonContent: 'ул. Большая Конюшенная 19/8, Санкт-Петербург'
+              }, {
+                  iconLayout: 'default#image',
+                
+                  iconImageHref: 'img/icon_map.png',
+                 
+                  iconImageSize: [218, 142],
+                
+                  iconImageOffset: [-40, -140]
+              });
+
+          myMap.geoObjects.add(myPlacemark);
+          myMap.behaviors.disable('scrollZoom');
+      });
+      
+    
