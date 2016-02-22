@@ -979,7 +979,7 @@ BUTTON-APPLY
 .filter-apply{
     display: block;
     float: right;
-    height: 32px;
+    height: 36px;
     line-height: 32px;
     margin-top: 25px;
     padding: 0 30px;
@@ -994,10 +994,9 @@ BUTTON-APPLY
 .filter-apply:active{
     border: none;
     background: #eaeaea;
-    padding-top: 8px;
-    padding-bottom: 8px;
     box-shadow: inset 0 2px 2px 2px #6c6d6c;
     color: #383939;
+    padding: 2px 32px;
 }
 /*
 =============================
