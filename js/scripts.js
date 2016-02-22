@@ -1,5 +1,5 @@
 
-        //popup open-close
+/*=======POPUP_OPEN_CLOSE*/
         
         var open = document.querySelector(".popup-open");
         var popup = document.querySelector(".popup");
@@ -31,7 +31,7 @@
       
         
         
-        //popup fields tips
+/*============POPUP===============*/
         var fieldName = document.querySelector(".popup input[name=name]");
         var yourNameTip = document.querySelector(".form-tip-name");
         var fieldEmail = document.querySelector(".popup input[name=email]");

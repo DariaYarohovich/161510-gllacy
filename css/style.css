@@ -359,7 +359,7 @@ LOGIN
 }
 .login{
     display: block;
-    padding: 7px 15px 7px 45px;
+    padding: 8px 15px 8px 45px;
     border-radius: 20px;
     background: rgba(248, 247, 244, 0.2) url("../img/header_login.png") no-repeat 17px center;
     color: #ffffff;
@@ -434,7 +434,7 @@ CARD
 }
 .card{
     display: block;
-    padding: 7px 30px 7px 45px;
+    padding: 8px 30px 8px 45px;
     border-radius: 20px;
     background: rgba(248, 247, 244, 0.2) url("../img/header_cart.png") no-repeat 17px center;
     color: #ffffff;
@@ -911,7 +911,7 @@ FILTER-FAT
     border-radius: 50%;
     background: #ffffff;
 }
-.radio-label input[type="radio"]:checked + .radio-indicator:hover::before{
+.radio-label:hover input[type="radio"]:checked + .radio-indicator::before{
     margin: 3px;
 }
 .radio-label input[type="radio"]:disabled + .radio-indicator{
