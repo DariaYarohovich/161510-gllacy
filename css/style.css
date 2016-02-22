@@ -133,6 +133,9 @@ body > input[type="radio"] {
   background-image: url("../img/slide_2.png");
 }
 
+
+
+
 #btn-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slide_3.png");
@@ -419,9 +422,19 @@ CARD
     font-weight: 500;
     text-decoration: none;
 }
+
+.card:after {
+    content:"Пусто";
+}
+
+.card:hover:after {
+    content:"2 товара";
+    
+}
 .card:hover{
-    background: rgba(248, 247, 244, 0.2) url("../img/card-black.svg") no-repeat 17px center;
+    background: rgba(248, 247, 244, 1) url("../img/card-full.png") no-repeat 17px center;
     color: #323232;
+    padding-right: 10px;
 }
 .card-field{
     position: absolute;
@@ -1128,6 +1141,12 @@ footer .container{
 .social-btn:hover{
     opacity: 1;
 }
+.soc-second-bg {
+    background:#758598;
+}
+.soc-third-bg {
+    background:#92786E;
+}
 .social-btn.tw{
     background-image: url("../img/tw.svg");
     background-repeat: no-repeat;
@@ -1200,7 +1219,7 @@ footer .container{
 .popup {
     display: none;
     position: absolute;
-    top: 340px;
+    top: 200px;
     left: 50%;
     z-index:12;
     width: 430px;
@@ -1234,7 +1253,7 @@ footer .container{
     width: 20px;
     height: 20px;
     margin-right: -10px;
-    background: url("/img/close.svg") no-repeat;
+    background: url("../img/close.svg") no-repeat;
     border:none;
     
     

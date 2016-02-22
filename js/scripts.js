@@ -53,5 +53,64 @@
         fieldEmail.addEventListener("blur", function(){
             yourEmailTip.classList.remove("form-tip-email-show");
         });
+
+        //social buttons dinamic background
+        var sliderControl1 = document.querySelector("[for=btn-1]");
+        var sliderControl2 = document.querySelector("[for=btn-2]");
+        var sliderControl3 = document.querySelector("[for=btn-3]");
+        var socialBtnTw = document.querySelector("a.tw");
+        var socialBtnIg = document.querySelector("a.ig");
+        var socialBtnFb = document.querySelector("a.fb");
+        var socialBtnVk = document.querySelector("a.vk");
         
+        sliderControl2.addEventListener("click", function(){
+            socialBtnTw.classList.add("soc-second-bg");
+            socialBtnTw.classList.remove("soc-third-bg");
+        });
+        sliderControl2.addEventListener("click", function(){
+            socialBtnIg.classList.add("soc-second-bg");
+            socialBtnIg.classList.remove("soc-third-bg");
+        });
+        sliderControl2.addEventListener("click", function(){
+            socialBtnFb.classList.add("soc-second-bg");
+            socialBtnFb.classList.remove("soc-third-bg");
+        });
+        sliderControl2.addEventListener("click", function(){
+            socialBtnVk.classList.add("soc-second-bg");
+            socialBtnVk.classList.remove("soc-third-bg");
+        });
         
+        //
+         sliderControl3.addEventListener("click", function(){
+            socialBtnTw.classList.remove("soc-second-bg");
+            socialBtnTw.classList.add("soc-third-bg");
+        });
+        sliderControl3.addEventListener("click", function(){
+            socialBtnIg.classList.remove("soc-second-bg");
+            socialBtnIg.classList.add("soc-third-bg");
+        });
+        sliderControl3.addEventListener("click", function(){
+            socialBtnFb.classList.remove("soc-second-bg");
+            socialBtnFb.classList.add("soc-third-bg");
+        });
+        sliderControl3.addEventListener("click", function(){
+            socialBtnVk.classList.remove("soc-second-bg");
+            socialBtnVk.classList.add("soc-third-bg");
+        });
+        //
+         sliderControl1.addEventListener("click", function(){
+            socialBtnTw.classList.remove("soc-second-bg");
+            socialBtnTw.classList.remove("soc-third-bg");
+        });
+        sliderControl1.addEventListener("click", function(){
+            socialBtnIg.classList.remove("soc-second-bg");
+            socialBtnIg.classList.remove("soc-third-bg");
+        });
+        sliderControl1.addEventListener("click", function(){
+            socialBtnFb.classList.remove("soc-second-bg");
+            socialBtnFb.classList.remove("soc-third-bg");
+        });
+        sliderControl1.addEventListener("click", function(){
+            socialBtnVk.classList.remove("soc-second-bg");
+            socialBtnVk.classList.remove("soc-third-bg");
+        });

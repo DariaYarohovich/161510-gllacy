@@ -42,8 +42,8 @@
                       <div class="login-form">
                           <a href="#" class="login">Вход</a>
                             <form class="form-field-login">
-                                  <input class="mail-model" type="text" placeholder="Электронная почта"> 
-                                  <input class="mail-model" type="password" placeholder="Пароль">
+                                  <input class="mail-model" type="text" placeholder="Электронная почта" required> 
+                                  <input class="mail-model" type="password" placeholder="Пароль" required>
                                   <button class="btn" type="submit">Войти</button>
                                   <ul class="login-help">
                                     <li><a href="#">Забыли пароль?</a></li>
@@ -52,7 +52,7 @@
                             </form>
                       </div>
                       <div class="card-form">
-                        <a href="#" class="card">Пусто</a>
+                        <a href="#" class="card"></a>
                           <div class="card-field">
                             <table class="card-content">
                                   <tr>
@@ -244,13 +244,13 @@
      <script>
           ymaps.ready(function () {
           var myMap = new ymaps.Map('map', {
-                  center: [59.93866675783276,30.32307250000002],
-                  zoom: 17,
+                  center: [59.939167,30.327075],
+                  zoom: 16,
                   controls: ['zoomControl']
               }, {
                   searchControlProvider: 'yandex#search'
               }),
-              myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+              myPlacemark = new ymaps.Placemark([59.9386667,30.3230725], {
                   hintContent: 'Собственный значок метки',
                   balloonHeader: 'Глейси',
                   balloonContent: 'ул. Большая Конюшенная 19/8, Санкт-Петербург'
@@ -269,7 +269,7 @@
       });
       </script>
       
-    <script src="/js/scripts.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
   </body>
   
   
