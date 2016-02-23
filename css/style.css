@@ -562,10 +562,12 @@ CONTACTS
 }
 .special-offer-left{
     float: left;
+    background: #921E3C;
     background-image: url("../img/index_img1.jpg");
 }
 .special-offer-right{
    float: right;
+    background: #472C1E;
     background-image: url("../img/index_img2.jpg");
 }
 .btn{
@@ -592,6 +594,7 @@ MAIN-DECSRIPTION
     margin-bottom: 40px;
     padding: 20px;
     border-radius: 15px;
+    background: #F0E5C9;
     background-image: url("../img/index_features_bg.jpg");
 }
 .main-description h4{
@@ -1075,10 +1078,17 @@ PRODUCTS
 .article{
     position: relative;
 }
-.item-hit{
+/*.item-hit{
     position: absolute;
     top: 10px;
     left: 10px;
+}*/
+.item-hit::before{
+    position: absolute;
+    content:"";
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/index_hit.png");
 }
 /*
 ===================
@@ -1304,6 +1314,7 @@ footer .container{
 .popup input:hover {
     color:#c7c6c5;
     border: 2px solid #c7c6c5;
+    padding: 12px 19px;
 }
 
 .popup input:focus {
@@ -1328,6 +1339,7 @@ textarea {
 .popup textarea:hover {
     color:#c7c6c5;
     border: 2px solid #c7c6c5;
+    padding: 12px 19px;
 }
 
 .popup textarea:focus {
